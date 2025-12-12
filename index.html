@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya | Portfolio</title>
+  <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon" />
+
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Mesh background + neon cursor -->
+  <canvas id="mesh-canvas" aria-hidden="true"></canvas>
+  <div id="neon-cursor" aria-hidden="true"></div>
+  
+
+  <header class="top-nav">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text" id="typewriter-name"></span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main>
+    <section class="hero" id="home">
+      
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-tag">Computer Science & Engineering Student</p>
+          <h1 class="hero-title">
+            Hi, I'm <span>Shreya B</span>
+          </h1>
+          <p class="hero-subtitle">
+            I design and build responsive, user-centric web experiences with
+            a focus on performance, accessibility, and clean UI.
+          </p>
+          <div class="domain-tags">
+  <span class="tag">Full-Stack Developer</span>
+  <span class="tag">Computer Vision</span>
+  <span class="tag">AI & Machine Learning</span>
+  <span class="tag">Data Science</span>
+  <span class="tag">Research Developer</span>
+  <span class="tag">Secure Camera Network Analysis</span>
+
+</div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="#contact" class="btn outline-btn">Contact Me</a>
+          </div>
+
+          <div class="hero-socials">
+           <a href="https://github.com/shreya-13-04" target="_blank" rel="noreferrer">
+            <img src="css/js/assets/icons/github.png" alt="GitHub icon" class="social-icon">
+            <span>GitHub</span>
+          </a>
+            <a href="https://www.linkedin.com/in/shreyabalasubramani/" target="_blank" rel="noreferrer">
+             <img src="css/js/assets/icons/linkedin.png" alt="LinkedIn icon" class="social-icon">
+              <span>LinkedIn</span>
+            </a>
+            <!-- Add more socials if you want -->
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glow-ring">
+            
+
+            <div class="glow-ring-inner">
+              <img src="css/js/assets/img/profile.jpg" alt="Shreya portrait" class="hero-avatar" />
+            </div>
+          </div>
+          <div class="status-card">
+            <span class="dot"></span>
+            <div>
+              <p class="status-label">Open for</p>
+              <p class="status-value">Internships &amp; Freelance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-intro">
+          I'm a developer focused on building modern web interfaces and solving
+          real-world problems with clean, scalable code. I enjoy working
+          end-to-end – from UX flows and UI design to implementation and deployment.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>What I Do</h3>
+            <p>
+              Craft responsive websites, dashboards, and interactive components
+              using HTML, CSS, JavaScript, and modern tooling.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>How I Work</h3>
+            <p>
+              I prioritize clean architecture, reusable components, and smooth
+              user journeys backed by thoughtful performance optimizations.
+            </p>
+          </div>
+          <div class="about-card">
+            <h3>Goals</h3>
+            <p>
+              To build impactful products, grow in frontend engineering, and
+              collaborate with strong engineering teams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>Responsive Web Design</li>
+              <li>Flexbox &amp; Grid</li>
+              <li>Basic React / Tailwind (if applicable)</li>
+            </ul>
+          </div>
+          <div class="skills-card">
+            <h3>Core</h3>
+            <ul>
+              <li>Data Structures &amp; Algorithms</li>
+              <li>Version Control (Git, GitHub)</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+          <div class="skills-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>VS Code</li>
+              <li>Figma / UI Tools</li>
+              <li>Chrome DevTools</li>
+              <li>GitHub Pages / Netlify</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">
+          A snapshot of the work I've done across UI development, computer vision,
+          and data-driven applications.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-tag">Web</div>
+            <h3>Hearth – Recipe Book</h3>
+            <p>
+              A desktop recipe-book application built with Electron.js, focusing
+              on intuitive UX and offline-first design.
+            </p>
+            <div class="project-meta">
+              <span>Electron.js</span>
+              <span>JavaScript</span>
+              <span>UI/UX</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-github/hearth" target="_blank">Code</a>
+              <!-- <a href="#" target="_blank">Live</a> -->
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-tag">Computer Vision</div>
+            <h3>Mobile Phone Detection in Classrooms</h3>
+            <p>
+              Real-time YOLOv8-based system to detect mobile phone usage in
+              classroom environments using a custom dataset.
+            </p>
+            <div class="project-meta">
+              <span>YOLOv8</span>
+              <span>Python</span>
+              <span>OpenCV</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-github/phone-detection" target="_blank">Code</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-tag">Space</div>
+            <h3>Lunar Boulder Detection</h3>
+            <p>
+              Object detection pipeline for lunar surface boulder detection,
+              evolving from classical vision to CNN-based methods.
+            </p>
+            <div class="project-meta">
+              <span>Computer Vision</span>
+              <span>YOLOv8</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/your-github/lunar-boulders" target="_blank">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">
+          Interested in working together, or just want to say hi? Drop a message.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Let’s Connect</h3>
+            <p>
+              The simplest way is via email or LinkedIn. I'm open to internships,
+              freelance projects, and collaborations.
+            </p>
+            <ul class="contact-list">
+              <li>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></li>
+              <li>GitHub: <a href="https://github.com/your-github" target="_blank">github.com/your-github</a></li>
+              <li>LinkedIn: <a href="https://linkedin.com/in/your-linkedin" target="_blank">linkedin.com/in/your-linkedin</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" onsubmit="return handleContactSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Share some details..." required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn full-width">Send Message</button>
+            <p class="form-note">
+              *This demo form opens your email client to send the message.
+              For a real backend we can later plug in Node.js or a form service.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; <span id="year"></span> Shreya. All rights reserved.</p>
+      <p class="footer-small">Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="css/js/mesh-cursor.js"></script>
+  <script src="css/js/main.js"></script>
+ 
+  
+</body>
+</html>

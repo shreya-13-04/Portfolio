@@ -664,6 +664,149 @@ body {
   box-shadow: 0 24px 60px rgba(15, 23, 42, 0.95);
 }
 
+/* =========================
+   Skills Galaxy (Green Theme)
+   ========================= */
+
+.skills-galaxy {
+  position: relative;
+}
+
+.skills-galaxy-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1.2rem;
+}
+
+.skill-pill {
+  position: relative;
+  padding: 0.9rem 1.2rem;
+  border-radius: 1.2rem;
+  background: linear-gradient(
+    145deg,
+    rgba(34, 197, 94, 0.14),
+    rgba(15, 23, 42, 0.9)
+  );
+  border: 1px solid rgba(34, 197, 94, 0.45);
+  color: #bbf7d0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.9),
+    inset 0 0 0 rgba(34, 197, 94, 0.0);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* Hover effect = galaxy glow */
+.skill-pill:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: var(--accent);
+  box-shadow:
+    0 20px 60px rgba(34, 197, 94, 0.35),
+    0 0 40px rgba(34, 197, 94, 0.25);
+}
+
+/* subtle floating feel */
+@media (prefers-reduced-motion: no-preference) {
+  .skill-pill {
+    animation: floatSkill 6s ease-in-out infinite;
+  }
+  .skill-pill:nth-child(even) {
+    animation-delay: 1.5s;
+  }
+}
+
+@keyframes floatSkill {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+/*Additional*/
+/* ===== Skills Galaxy ===== */
+
+
+/* Lucide icons */
+.skill-pill svg {
+  width: 16px;
+  height: 16px;
+  stroke: #ffffff;
+}
+
+/* Hover glow */
+.skill-pill:hover {
+  transform: translateY(-2px);
+  border-color: #22c55e;
+  box-shadow:
+    0 0 14px rgba(34, 197, 94, 0.55),
+    0 0 32px rgba(34, 197, 94, 0.25);
+}
+
+/* Soft Skills */
+.soft-skills {
+  margin-top: 4rem;
+}
+
+.soft-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.soft-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 197, 94, 0.12),
+    rgba(15, 23, 42, 0.9)
+  );
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.soft-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 60px rgba(34, 197, 94, 0.25);
+}
+
+.soft-card i {
+  width: 20px;
+  height: 28px;
+  color: #e5e7eb; /* white icons */
+  margin-bottom: 1rem;
+}
+
+.soft-card h3 {
+  font-size: 1.0rem;
+  margin-bottom: 0.5rem;
+  color: #e5e7eb;
+}
+
+.soft-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .soft-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* Projects */
 .projects-grid {
   display: grid;

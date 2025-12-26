@@ -478,7 +478,10 @@ body {
   color: #e5e7eb;
   background: rgba(15, 23, 42, 0.85);
 }
-
+.education-text {
+  padding-left: 1rem;
+  padding-right: 5rem;
+}
 
 .status-card {
   position: absolute;
